@@ -1,0 +1,138 @@
+.main-logo {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0px 10px 0px;
+	width: 150px;
+}
+.header-left {
+	background-color: #fff;
+	width: 300px;
+	height: 80px;
+	min-width: 300px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.header-left:hover {
+	background-color: #cfdbe6;
+	-webkit-transition: background-color 100ms linear;
+	-moz-transition: background-color 100ms linear;
+	-o-transition: background-color 100ms linear;
+	-ms-transition: background-color 100ms linear;
+	transition: background-color 100ms linear;
+}
+.header-center {
+	display: block;
+}
+.header {
+	position: relative;
+	background-color: #2b5b84;
+	display: block;
+	width: 100%;
+	height: 80px;
+	z-index: 99999;
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+}
+.header-right {
+	display: flex;
+	padding-top: 20px;
+	width: auto;
+}
+.header-inner {
+	width: 95%;
+	display: table;
+	position: absolute;
+	left: 5%;
+	z-index: 1000;
+}
+.header-placeholder {
+	height: 80px;
+	background-color: #fff;
+}
+.lang-container {
+	position: absolute;
+	color: #fff;
+	font-size: 10pt;
+	right: 0px;
+	top: 0px;
+	padding: 5px;
+	z-index: 10000;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 63em) {
+	
+	.header-inner {
+		left: 0;
+		width: 100%;
+	}
+	
+	.header-left {
+		z-index: 1000;
+		width: 250px;
+		min-width: 150px;
+		display: block;
+	}
+	.slider-infobar{
+		left: 0;
+		width: 250px;
+		min-width: 250px;
+	}
+	.slider-infobar-inner {
+		width: 200px;
+		max-width: 200px;
+		left: 0;
+	}
+	.button-slider {
+		font-size: 9pt;
+	}
+	
+}
+
+@media only screen and (max-width: 58em) {
+
+	.header-center {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 100%;
+		height: 0px;
+	}
+	.main-logo {
+		display: block;
+		margin: 0 auto;
+		padding: 8px 0px 8px 0px;
+		width: 130px;
+	}
+	.header {
+		background-color: #2b5b84;
+		display: block;
+		width: 100%;
+		z-index: 1000;
+		height: 70px;
+	}
+	.header-inner {
+		width: 100%;
+		display: table;
+	}
+	.header-left {
+		height: 70px;
+	}
+	.header-right {
+		display: block;
+		width: 100%;
+		min-width: 90%;
+	}
+	.header-placeholder {
+		height: 80px;
+	}
+}
+
+@media only screen and (max-width: 34em) {
+	
+	.header-left {
+		max-width: 50%;
+	}
+	
+}
